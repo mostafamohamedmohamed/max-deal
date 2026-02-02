@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MaxDeal - 8K Ultra-HD Premium eCommerce</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800;900&family=Noto+Sans+Arabic:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              brand: {
+                teal: '#088395',    /* Primary Teal */
+                wash: '#EBF4F6',    /* Secondary Wash */
+                dark: '#071952',    /* Accent Midnight */
+                red: '#EF4444',     /* Alert Red */
+                gold: '#F59E0B'     /* Premium Gold */
+              }
+            },
+            fontFamily: {
+              inter: ['Inter', 'sans-serif'],
+              poppins: ['Poppins', 'sans-serif'],
+              arabic: ['Noto Sans Arabic', 'sans-serif']
+            },
+            backgroundImage: {
+              'primary-gradient': 'linear-gradient(135deg, #088395 0%, #05BFDB 100%)',
+              'dark-gradient': 'linear-gradient(135deg, #071952 0%, #088395 100%)'
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body { font-family: 'Inter', 'Poppins', 'Noto Sans Arabic', sans-serif; overflow-x: hidden; background-color: #F8FAFC; color: #071952; }
+      .glass-morphism { backdrop-filter: blur(20px); background: rgba(255, 255, 255, 0.85); border: 1px solid rgba(255, 255, 255, 0.2); }
+      .glass-dark { backdrop-filter: blur(25px); background: rgba(7, 25, 82, 0.85); border: 1px solid rgba(255, 255, 255, 0.1); }
+      .parallax { background-attachment: fixed; background-position: center; background-repeat: no-repeat; background-size: cover; }
+      [dir="rtl"] { font-family: 'Noto Sans Arabic', sans-serif; }
+      .no-scrollbar::-webkit-scrollbar { display: none; }
+      .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+      
+      .btn-primary-gradient { 
+        background: linear-gradient(135deg, #088395 0%, #05BFDB 100%); 
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); 
+      }
+      .btn-primary-gradient:hover { 
+        transform: translateY(-2px); 
+        box-shadow: 0 10px 25px rgba(8, 131, 149, 0.4); 
+      }
+      
+      .product-card-elite:hover img { transform: scale(1.05); }
+      .text-glow-teal { text-shadow: 0 0 15px rgba(8, 131, 149, 0.4); }
+      
+      /* 2026 Mobile Frame Styling */
+      .iphone-frame {
+        width: 390px;
+        height: 844px;
+        border: 12px solid #000;
+        border-radius: 50px;
+        overflow: hidden;
+        position: relative;
+        box-shadow: 0 50px 100px rgba(0,0,0,0.3);
+      }
+      .iphone-island {
+        width: 120px;
+        height: 35px;
+        background: #000;
+        border-radius: 20px;
+        position: absolute;
+        top: 15px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 50;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.4",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.39.0"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>

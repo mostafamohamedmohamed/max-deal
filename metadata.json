@@ -1,0 +1,7 @@
+{
+  "name": "MaxDeal - 8K Ultra-HD eCommerce Template",
+  "description": "A photorealistic, ultra-HD eCommerce storefront featuring 2026 tech products, bilingual support (AR/EN), and a high-performance design for desktop and mobile.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
